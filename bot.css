@@ -1,0 +1,359 @@
+:root {
+    --blue: #1283da;
+    --indigo: #6610f2;
+    --purple: #7c39ed;
+    --pink: #e929ba;
+    --red: #e52e4d;
+    --orange: #f7653b;
+    --yellow: #df8d00;
+    --green: #11af22;
+    --teal: #02a9a4;
+    --cyan: #01a9da;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #1283da;
+    --secondary: #6c757d;
+    --success: #11af22;
+    --info: #7c39ed;
+    --warning: #df8d00;
+    --danger: #e52e4d;
+    --light: #f0f2f4;
+    --dark: #343a40;
+    --white: #fff;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Lato", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: block;
+}
+#boxs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+    background-color: #123d68ad;
+}
+#boxs > .immag {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 800px;
+}
+#bosxs {
+    display: flex;
+    width: 100%;
+}
+#boxs > .container {
+    position: absolute;
+    justify-self: center;
+}
+.imgae::after {
+    content: "";
+    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(127, 167, 170, 0.85);
+    z-index: 0;
+}
+.immag {
+    object-fit: cover;
+    position: absolute;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#dropdownmenu {
+    animation-name: dropdownAnimation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes dropdownAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+#Card1 {
+    background-color: rgba(188, 143, 143, 0);
+    border: none;
+}
+#Card1 .card-body > h1 {
+    font-family: var(--font-family-sans-serif);
+    font-weight: 600;
+}
+#Card1 .card-body {
+    line-height: 3rem;
+}
+#Card1 .card-body > h5 {
+    font-family: var(--font-family-sans-serif);
+}
+section {
+    display: block;
+    padding-top: 5rem;
+    width: 100%;
+    height: 800px;
+    max-height: 800px;
+}
+#container3 > .card {
+    background-color: #01a7da00;
+}
+#container3 {
+    display: flex;
+    flex-direction: column;
+}
+#card2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    border: none;
+}
+#card2 h2 {
+    font-family: var(--font-family-sans-serif);
+    font-weight: 600;
+}
+#card2 h5 {
+    font-family: var(--font-family-sans-serif);
+}
+#pages > a {
+    position: absolute;
+    cursor: pointer;
+    border-bottom: 2px solid;
+    border-color: #dee2e6;
+    transition: all 0.2s linear(-0.07 62.09%, 1 100%);
+    text-decoration: none;
+}
+#pagee > h6 {
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+#pagee > h6:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+}
+#pagee > h6:hover,
+#pagee > h6:focus,
+#pagee > h6:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+}
+#pagee > h6:hover:before,
+#pagee > h6:focus:before,
+#pagee > h6:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+#colimg > img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+#imgsection {
+    border-radius: 0.35rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.1);
+    transition-duration: 0.2s;
+}
+#imgsection:hover {
+    margin-top: -3px;
+    margin-left: -3px;
+    cursor: pointer;
+    border-radius: 0.35rem;
+    border: 0px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 13px 13px 0 0 rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+.section2 {
+    display: block;
+    width: 100%;
+    height: 600px;
+    background-color: #d9dcdf;
+}
+
+.section2 > .container {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+#section2text {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+#section2text > div > img {
+    height: 500px;
+}
+#section2text > div:first-child {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+}
+.section3 {
+    display: block;
+    width: 100%;
+    height: 600px;
+    /* background-color: #bbe4ee; */
+}
+.section3 > .container {
+    padding-top: 5rem;
+}
+#sectionh3 {
+    display: flex;
+    justify-content: center;
+}
+#section3card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+
+#section3card > .section3card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 110px;
+    height: 50px;
+}
+article {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: #1283da;
+}
+article > .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#deva > img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+#deva {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+article > .container > div > ol > li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.article {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    padding-top: 5rem;
+    background-color: rgb(215, 228, 228);
+}
+.article > div > .card-deck {
+    display: flex;
+    justify-content: center;
+}
+footer {
+    width: 100%;
+    height: 500px;
+}
+footer > .container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding-top: 5rem;
+    justify-content: space-between;
+}
+#footerh5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 5px;
+}
+#footerh5 > div > a {
+    position: absolute;
+    text-decoration: none;
+    color: #464646;
+    border-bottom: 2px solid #d9dcdf;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+#footerh5 > div > a:hover {
+    transition: 0.3s;
+    border-bottom: 2px solid #7d8185;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+#footerh5 > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 2rem;
+}
+footer > .container:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
